@@ -1,7 +1,5 @@
-<link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
-
 <div class="flexContainer contador">
-    <div [ngStyle]="{ color: contador < 5 ? 'red' : 'blue' }">{{ contador }}</div>
+    <div class="displayContador" [ngStyle]="{ color: contador < 5 ? 'white' : 'blue' }">{{ contador }}</div>
 </div>
 <div class="flexContainer">
     <button type="button" class="botao btn btn-outline-danger" (click)="decrementaContador()">-</button>

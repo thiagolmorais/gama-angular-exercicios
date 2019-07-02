@@ -20,11 +20,21 @@
     font-size: 3em;
 }
 
+.displayContador {
+    border: solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background: rgba(29, 145, 190, 0.884);
+}
+
 .flexContainer {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
     align-items: center;
 }
 
