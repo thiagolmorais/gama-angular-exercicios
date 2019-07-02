@@ -1,0 +1,13 @@
+<link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
+
+<div class="flexContainer contador">
+    <div [ngStyle]="{ color: contador < 5 ? 'red' : 'blue' }">{{ contador }}</div>
+</div>
+<div class="flexContainer">
+    <button type="button" class="botao btn btn-outline-danger" (click)="decrementaContador()">-</button>
+    <button type="button" class="botao btn btn-success" (click)="incrementaContador()">+</button>
+</div>
+<div class="flexContainer">
+    <p class="flexItem menor" *ngIf="contador < 5">Número menor que: 5</p>
+    <p class="flexItem maior" *ngIf="contador >= 5">Número maior que: 5</p>
+</div>

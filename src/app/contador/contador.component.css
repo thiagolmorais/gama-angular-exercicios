@@ -1,0 +1,33 @@
+.comparacao {
+    font-family: 'Days One', sans-serif;
+    font-size: 1em;
+}
+
+.botao {
+    width: 15%;
+    margin: 0.1%;
+}
+.maior {
+    color: blue;
+}
+
+.menor {
+    color: crimson;
+}
+
+.contador {
+    font-family: 'Days One', sans-serif;
+    font-size: 3em;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    align-items: center;
+}
+
+.flexItem {
+    align-self: baseline;
+}
