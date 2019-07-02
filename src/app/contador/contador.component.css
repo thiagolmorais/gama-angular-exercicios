@@ -3,22 +3,22 @@ h1 {
     font-family: 'Days One', sans-serif;
     color: rgba(29, 145, 190, 0.884);
     text-shadow: -3px 1px 6px rgba(187,187,187,0.92);
-}
-.comparacao {
-    font-family: 'Days One', sans-serif;
-    font-size: 1em;
+    font-size: 400%;
 }
 
 .botao {
     width: 15%;
     margin: 0.1%;
+    font-size: 2em;
 }
 .maior {
     color: blue;
+    font-size: 2em;
 }
 
 .menor {
     color: crimson;
+    font-size: 2em;
 }
 
 .contador {
