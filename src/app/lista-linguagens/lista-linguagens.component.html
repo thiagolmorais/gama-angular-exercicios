@@ -1,6 +1,6 @@
 <h1>Linguagens</h1>
-<div class="d-flex flex-wrap">
-    <div *ngFor="let linguagem of linguagens" class="card" style="width: 18rem;">
+<div class="row">
+    <div *ngFor="let linguagem of linguagens" class="card col-sm-3 p-0" style="width: 18rem;">
         <app-linguagem [data]="linguagem"></app-linguagem>
     </div>
 </div>
