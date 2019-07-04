@@ -1,19 +1,19 @@
 <div class="container">
     <form #form="ngForm">
-        <div>
-            <input type="hidden" [(ngModel)]="linguagem.id" name="id" id="id" placeholder="ID">
+        <div class="form-group">
+            <input class="form-control" type="hidden" [(ngModel)]="linguagem.id" name="id" id="id" placeholder="ID">
         </div>
-        <div>
-            <input type="text" [(ngModel)]="linguagem.name" name="name" id="name" placeholder="Nome">
+        <div class="form-group">
+            <input class="form-control" type="text" [(ngModel)]="linguagem.name" name="name" id="name" placeholder="Nome">
         </div>
-        <div>
-            <input type="text" [(ngModel)]="linguagem.creator" name="creator" id="creator" placeholder="Criador">
+        <div class="form-group">
+            <input class="form-control" type="text" [(ngModel)]="linguagem.creator" name="creator" id="creator" placeholder="Criador">
         </div>
-        <div>
-            <input type="text" [(ngModel)]="linguagem.year" name="year" id="year" placeholder="Ano">
+        <div class="form-group">
+            <input class="form-control" type="text" [(ngModel)]="linguagem.year" name="year" id="year" placeholder="Ano">
         </div>
-        <div>
-            <button (click)="enviar()">Enviar</button>
+        <div class="form-group">
+            <button class="form-control" class="btn btn-success" (click)="enviar()">Enviar</button>
         </div>
     </form>
 </div>
