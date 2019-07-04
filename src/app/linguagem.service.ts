@@ -18,5 +18,9 @@ export class LinguagemService {
     return this.httpClient.get<Linguagem[]>('http://localhost:3000/languages')
   }
 
+  enviar(linguagem: Linguagem){
+    return this.httpClient.post('http://localhost:3000/languages', linguagem)
+  }
+
 
 }

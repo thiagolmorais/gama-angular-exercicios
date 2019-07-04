@@ -8,10 +8,14 @@ import { Linguagem } from 'src/typings/Linguagem';
 import { LinguagemComponent } from './linguagem/linguagem.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ListaLinguagensComponent } from './lista-linguagens/lista-linguagens.component';
+import { AddLinguagemComponent } from './add-linguagem/add-linguagem.component';
+import { FormsModule } from '@angular/forms';
+import { YearPipe } from './year.pipe';
 
 const routes: Routes = [
   { path: 'counter', component: ContadorComponent },
   { path: 'languages', component: ListaLinguagensComponent },
+  { path: 'add-languagem', component: AddLinguagemComponent },
 ];
 
 @NgModule({
@@ -19,12 +23,15 @@ const routes: Routes = [
     AppComponent,
     ContadorComponent,
     LinguagemComponent,
-    ListaLinguagensComponent
+    ListaLinguagensComponent,
+    AddLinguagemComponent,
+    YearPipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
