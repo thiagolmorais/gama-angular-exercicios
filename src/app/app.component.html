@@ -1,6 +1,14 @@
 <div>
-    <a routerLink="/counter">Contador</a> |
-    <a routerLink="/languages">Linguagens</a> |
-    <a routerLink="/add-languagem">Adiciona Linguagem</a> |
+    <a routerLink="counter">Contador</a> |
+    <a routerLink="languages">Linguagens</a> |
+    <a routerLink="languages/add">Adiciona Linguagem</a> |
+    <span *ngIf="email !== ''; else login">
+        Olá, {{ email }}
+        <button (click)="logout()" class="btn btn-outline-danger">Sair</button>
+    </span>
+    <ng-template #login>
+        <a routerLink="auth/login">Login</a> |
+        <a routerLink="auth/register">Registrar</a> |
+    </ng-template>
     <router-outlet></router-outlet>
 </div>
